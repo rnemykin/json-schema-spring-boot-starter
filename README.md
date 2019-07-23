@@ -5,9 +5,9 @@
 1.  Dependency
 ```xml
 <dependency>
-            <groupId>ru.rnemykin.spring.boot</groupId>
-            <artifactId>json-schema-spring-boot-starter</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+    <groupId>ru.rnemykin.spring.boot</groupId>
+    <artifactId>json-schema-spring-boot-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
