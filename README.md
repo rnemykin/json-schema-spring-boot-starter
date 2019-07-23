@@ -14,17 +14,17 @@
 2. Use default configuration or define your own
 ```java
 @Bean
-    public Library library(KeywordProcessor processor, ApplicationContext ctx) {
-        LibraryBuilder builder = DraftV4Library.get().thaw();
-        builder.addKeyword(
-                Keyword.newBuilder(processor.keyword())
-                        .withSyntaxChecker(...)
-                        .withDigester(...)
-                        .withValidatorFactory(new SpringAwareKeywordValidatorFactory(...)
-                        .freeze()
-        );
-        return builder.freeze();
-    }
+public Library library(KeywordProcessor processor, ApplicationContext ctx) {
+    LibraryBuilder builder = DraftV4Library.get().thaw();
+    builder.addKeyword(
+            Keyword.newBuilder(processor.keyword())
+                    .withSyntaxChecker(...)
+                    .withDigester(...)
+                    .withValidatorFactory(new SpringAwareKeywordValidatorFactory(...)
+                    .freeze()
+    );
+    return builder.freeze();
+}    
 ```
 
 3. Write custom keywordValidators 
