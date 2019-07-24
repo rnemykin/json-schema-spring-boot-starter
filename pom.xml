@@ -15,6 +15,13 @@
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     </properties>
 
+    <scm>
+        <connection>scm:git:https://github.com/rnemykin/json-schema-spring-boot-starter.git</connection>
+        <developerConnection>scm:git:https://github.com/rnemykin/json-schema-spring-boot-starter.git</developerConnection>
+        <url>https://github.com/rnemykin/json-schema-spring-boot-starter/tree/${project.scm.tag}</url>
+        <tag>master</tag>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
